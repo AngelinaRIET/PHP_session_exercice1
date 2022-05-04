@@ -26,7 +26,7 @@ $message = ''; // <= MESSAGE À DESTINATION DE L'UTILISATEUR (PAS TOUCHE)
         $varName = $_POST['varName'];
         $varValue = $_POST['varValue'];
         $_SESSION[$varName]= $varValue;
-        $message = "La variable' .$varName a été ajoutée à la session, sa valeur est .$varValue";
+        $message = "La variable <strong>$varName</strong> a été ajoutée à la session, sa valeur est <strong>$varValue</strong>";
     }
    
 
@@ -67,7 +67,7 @@ $message = ''; // <= MESSAGE À DESTINATION DE L'UTILISATEUR (PAS TOUCHE)
 
             if(isset($_SESSION[$varName])){
                 unset($_SESSION[$varName]);
-                $message = "La variable .$varName a été supprimée de la session";
+                $message = "La variable <strong>$varName</strong> a été supprimée de la session";
 
             }
            
